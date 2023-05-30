@@ -1,0 +1,31 @@
+<div class="container_background" [ngStyle]="{'background-image': 'url('+currentBackgroundImage+')'}"></div>
+
+<header>
+  <div class="image_right">
+    <img src="assets/logo.png" alt="logo" height="500">
+  </div>
+  <div class="menu">
+    <div class="menu_item">
+      <a routerLink="/">Home</a>
+    </div>
+    <div class="menu_item">
+      <a routerLink="/majors">Majors</a>
+    </div>
+      <div class="menu_item">
+      <a routerLink="/minors">Minors</a>
+    </div>
+      <div class="menu_item">
+      <a routerLink="/aanmelden">Aanmelden</a>
+    </div>
+      <div class="menu_item">
+      <a routerLink="/spa">About us</a>
+    </div>
+      <div class="menu_item">
+      <a routerLink="/contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
