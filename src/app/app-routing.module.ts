@@ -7,6 +7,7 @@ import { MinorsComponent } from './pages/minors/minors.component';
 import { SPAComponent } from './pages/SPA/spa.component';
 import { AanmeldenComponent } from './pages/aanmelden/aanmelden.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { PrivacyPolicyAppComponent } from './pages/privacy/app/privacy_policy_app.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: "minors", component: MinorsComponent },
   { path: "aanmelden", component: AanmeldenComponent },
   { path: "spa", component: SPAComponent },
+  { path: "privacy-policy-app", component: PrivacyPolicyAppComponent },
   { path: "contact", component: ContactComponent },
   { path: "**", component: PageNotFoundComponent }
 ];

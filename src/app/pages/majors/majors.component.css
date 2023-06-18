@@ -30,24 +30,26 @@
 .programma_item {
     border-radius: 5px;
     background: linear-gradient(110deg, #d5000070 30%, #d8252584 70%);
-    max-width: 600px;
+    max-width: 800px;
     padding: 10px;
     color: white;
     font-family: "Roboto", sans-serif;
     margin: 20px;
     border: 1px solid #16090980;
+    border-left: 4px solid #d7d7d7fa;
 }
 
 .programma_item_inside {
-    border-left: 4px solid #d7d7d7fa;
     padding: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.programma_item_time {
-    font-family: "Vina Sans", sans-serif;
-    font-size: 16pt;
+.programma_item_image {
     display: inline-block;
+    width: 300px;
 }
+
 
 .programma_item_location {
     font-family: "Vina Sans", sans-serif;
