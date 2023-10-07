@@ -6,5 +6,5 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentBackgroundImage: string = '../assets/background.jpg';
+  currentBackgroundImage: string = '../assets/background/bg2.jpg';
 }
