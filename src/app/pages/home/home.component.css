@@ -1,81 +1,68 @@
-/** .top_text horizontal center, all caps, white color **/
-.top_text {
+/* .outer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-transform: uppercase;
-    color: white;
-    font-family: "Vina Sans", sans-serif;
-    font-size: 60pt;
-    padding-top: 0px;
-    padding-bottom: 500px;
-    text-align: center;
-}
+    height: 100%;
+} */
 
 .bottom {
+    justify-content: center;
     position: fixed;
     padding: 25px;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.24555759803921573) 100%);
-}
-
-.join_us {
-    justify-content: center;
     color: white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16pt;
-    font-weight: 300;
-    padding: 20px;
-    text-align: center;
-    max-width: 1000px;
-    margin: 200px auto 0 auto;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    padding-bottom: 200px;
+    font-family: "Vina Sans", sans-serif;
 }
 
-.join_us > .title {
-    font-size: 40pt;
-    font-weight: 700;
-    text-align: left;
-    font-family: "Caveat", sans-serif;
-    transform: rotate(-4deg);
-    margin-bottom: 40px;
-    margin-left: -40px;
-    margin-top: 35px;
+.middle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 .date {
     display: block;
-    justify-content: center;
     text-transform: uppercase;
     color: white;
     font-family: "Vina Sans", sans-serif;
-    font-size: 40pt;
-    padding-top: 10px;
+    font-size: 80pt;
     text-align: center;
 }
 
 .date>.small {
-    font-size: 20pt;
+    font-size: 30pt;
     text-align: center;
     display: block;
 }
-.date>.poweredby {
+
+.date>.smaller {
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.bottom>.poweredby {
     font-size: 20pt;
     text-align: center;
     display: block;
 }
 
-.date>.poweredby>img {
+.bottom>.poweredby>img {
     width: 20px;
     height: 20px;
 }
 
 @media screen and (max-width: 800px) {
     .date {
-        font-size: 30pt;
+        font-size: 50pt;
     }
 
     .join_us {
@@ -83,7 +70,7 @@
         font-size: 14pt;
     }
 
-    .join_us > .title {
+    .join_us>.title {
         margin-bottom: 20px;
         margin-left: -20px;
         margin-top: 50px;
@@ -92,10 +79,7 @@
 
 @media screen and (max-width: 450px) {
     .date {
-        color: white;
-        font-family: "Vina Sans", sans-serif;
-        font-size: 28pt;
-        padding-top: 10px;
+        font-size: 40pt;
     }
 
 }
